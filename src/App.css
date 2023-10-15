@@ -1,3 +1,374 @@
-.main{
-    background-color: darkblue;
+* {
+    margin: 0 !important;
+    padding: 0 !important;
+    box-sizing: border-box;
+    font-family: "Arial";
+}
+
+.main {
+    width: 100% !important;
+    display: grid !important;
+    grid-template-columns: 1fr 5fr !important;
+}
+
+.sidebar {
+    background: linear-gradient(to bottom, #091b35 0%, #121369 100%);
+    color: white;
+    height: 100vh;
+}
+
+.dashboard{
+    display: grid;
+    margin: 2% 0 0 2.6% !important;
+    grid-template-columns: 3.5fr 1fr;
+}
+
+.input-group {
+    position: relative;
+    width: 100%;
+}
+
+.form-outline {
+    display: flex;
+    align-items: center;
+}
+
+.form-control {
+    padding-left: 30px;
+}
+
+.fa-input {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    color: rgb(155, 154, 154);
+    transform: translateY(-50%);
+}
+.form-control::placeholder {
+    padding-left: 25px;
+    color: grey;
+}
+
+.sharukh{
+    font-size: 20px;
+}
+
+input{
+    padding: 7px !important;
+    border-radius:8px;
+    border-color: grey !important;
+    outline: none;
+    border: 1px solid grey;
+}
+
+
+.sidebar-links{
+    display: flex !important;
+    flex-direction: column;
+    margin: 20px !important;
+}
+
+.link{
+    padding: 10px !important;
+    margin: 5px 2px 5px 2px !important;
+    border-radius: 9px;
+    font-size: 13px;
+}
+
+.first{
+    background-color: rgb(3, 3, 161);
+}
+
+
+.card{
+    background-color: white;
+    width:90%;
+    padding: 10% 8% 10% 8% !important;
+    border-radius: 8px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.dashboard-section{
+    background-color: rgb(223, 228, 230);
+}
+
+.card-section{
+  margin: 2% 2% 4% 4% !important;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+
+}
+
+
+.green-circle,.pink-circle,.purple-circle, .sky-circle{
+    padding: 10%;
+    border-radius: 50%;
+    background-color: rgb(160, 218, 160);
+    width:70px;
+    height: 70px;
+}
+
+
+.card-detail{
+    margin-left: 15px !important;
+}
+.range{
+    font-size: 12px;
+}
+
+.red{
+    color: rgb(243, 9, 9);
+}
+
+.green{
+    color: rgb(91, 172, 91);
+}
+
+.green-circle{
+    background-color: rgb(196, 238, 196);
+}
+
+.pink-circle{
+    background-color:rgb(248, 190, 199);
+}
+
+.sky-circle{
+    background-color: rgb(201, 212, 216);
+}
+
+.purple-circle{
+  background-color: rgb(248, 203, 248);
+}
+
+.heading{
+    font-size: 12px;
+    color: grey;
+}
+/* App.css */
+
+        .vertical-bar-chart {
+            display: flex;
+            flex-direction: row;
+            /* Display the bars vertically */
+            align-items: center;
+        }
+
+* {
+    margin: 0 !important;
+    padding: 0 !important;
+    box-sizing: border-box;
+    font-family: "Arial";
+}
+
+.main {
+    width: 100% !important;
+    display: grid !important;
+    grid-template-columns: 1fr 5fr !important;
+}
+
+.sidebar {
+    background: linear-gradient(to bottom, #091b35 0%, #121369 100%);
+    color: white;
+    height: 100vh;
+}
+
+.dashboard {
+    display: grid;
+    margin: 2% 0 0 2.6% !important;
+    grid-template-columns: 3.5fr 1fr;
+}
+
+.input-group {
+    position: relative;
+    width: 100%;
+}
+
+.form-outline {
+    display: flex;
+    align-items: center;
+}
+
+.form-control {
+    padding-left: 30px;
+}
+
+.fa-input {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    color: rgb(155, 154, 154);
+    transform: translateY(-50%);
+}
+
+.form-control::placeholder {
+    padding-left: 25px;
+    color: grey;
+}
+
+.sharukh {
+    font-size: 20px;
+}
+
+input {
+    padding: 7px !important;
+    border-radius: 8px;
+    border-color: grey !important;
+    outline: none;
+    border: 1px solid grey;
+}
+
+
+.sidebar-links {
+    display: flex !important;
+    flex-direction: column;
+    margin: 20px !important;
+}
+
+.link {
+    padding: 10px !important;
+    margin: 5px 2px 5px 2px !important;
+    border-radius: 9px;
+    font-size: 13px;
+}
+
+.first {
+    background-color: rgb(3, 3, 161);
+}
+
+
+.card {
+    background-color: white;
+    width: 90%;
+    padding: 10% 8% 10% 8% !important;
+    border-radius: 8px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.dashboard-section {
+    background-color: rgb(223, 228, 230);
+}
+
+.card-section {
+    margin: 4% 2% 4% 4% !important;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+
+}
+
+
+.green-circle,
+.pink-circle,
+.purple-circle,
+.sky-circle {
+    padding: 10%;
+    border-radius: 50%;
+    background-color: rgb(160, 218, 160);
+    width: 70px;
+    height: 70px;
+}
+
+
+.card-detail {
+    margin-left: 15px !important;
+}
+
+.range {
+    font-size: 12px;
+}
+
+.red {
+    color: rgb(243, 9, 9);
+}
+
+.green {
+    color: rgb(91, 172, 91);
+}
+
+.green-circle {
+    background-color: rgb(196, 238, 196);
+}
+
+.pink-circle {
+    background-color: rgb(248, 190, 199);
+}
+
+.sky-circle {
+    background-color: rgb(201, 212, 216);
+}
+
+.purple-circle {
+    background-color: rgb(248, 203, 248);
+}
+
+.heading {
+    font-size: 12px;
+    color: grey;
+}
+
+.overview-customer{
+    display: flex;
+    flex-wrap: wrap;
+    flex-basis: 50%;
+    width:100% !important;
+    height: 280px;
+    padding: 0 3% 0 3% !important;
+    align-content: space-between;
+    border: 2px solid black;
+}
+
+
+.overview{
+    padding:0 !important;
+    border: 2px solid black;
+    width:66%;
+}
+
+.customer{
+    height: 280px !important;
+    background-color: white;
+    border-radius: 10px;
+    width:30%;
+}
+
+
+.donut-chart-container {
+    width: 200px;
+    height: 200px;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+}
+
+.donut-chart {
+    width: 100%;
+    height: 100%;
+    border: 10px solid transparent;
+    border-top-color: pink;
+    border-right-color: pink;
+    border-radius: 50%;
+    position: absolute;
+    transform: rotate(90deg);
+}
+
+.donut-chart-text {
+    text-align: center;
+    color: #333;
+}
+
+.donut-chart-text h4 {
+    font-size: 24px;
+    margin: 0;
+}
+
+.donut-chart-text p {
+    font-size: 14px;
+    margin: 0;
 }
