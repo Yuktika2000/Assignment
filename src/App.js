@@ -2,7 +2,6 @@ import "./App.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faSearch } from "@fortawesome/free-solid-svg-icons";
 import { AiOutlineArrowUp } from "react-icons/ai";
-import Chart from "react-google-charts";
 import DonutChart from "./DonutChart";
 import { Data } from "./Data";
 import { TbNotes } from "react-icons/tb";
@@ -12,55 +11,8 @@ import { BsPersonSquare } from "react-icons/bs";
 import { HiOutlineKey } from "react-icons/hi";
 import { TbPercentage } from "react-icons/tb";
 import { PiCube } from "react-icons/pi";
+
 function App() {
-  const data = [
-    ["Month", "Value"],
-    ["Jan", 5],
-    ["Feb", 8],
-    ["Mar", 12],
-    ["Apr", 9],
-    ["May", 7],
-    ["Jun", 11],
-    ["Jul", 15],
-    ["Aug", 18],
-    ["Sep", 14],
-    ["Oct", 10],
-    ["Nov", 6],
-    ["Dec", 4],
-  ];
-
-  const options = {
-    title: "Monthly Earning",
-    chartArea: {
-      width: "94%",
-      height: "70%",
-    },
-    colors: [
-      "rgb(223, 228, 230)",
-      "blue", // Set the color for the August bar to blue
-      "rgb(223, 228, 240)",
-      "rgb(223, 228, 230)",
-      "rgb(223, 228, 230)",
-      "rgb(223, 228, 230)",
-      "rgb(223, 228, 230)",
-      "rgb(223, 228, 230)",
-      "rgb(223, 228, 230)",
-      "rgb(223, 228, 230)",
-      "rgb(223, 228, 230)",
-      "rgb(223, 228, 230)",
-    ],
-    hAxis: {
-      baselineColor: "transparent", // Remove the x-axis line
-      gridlines: {
-        color: "transparent", // Remove the x-axis gridlines
-      },
-    },
-    vAxis: {
-      textPosition: "none", // Remove value range display on the y-axis
-    },
-    legend: "none", // Remove legend
-  };
-
   return (
     <>
       <div className="main">
@@ -105,9 +57,11 @@ function App() {
               </div>
             </div>
             <div className="link">
-              <div>
-                <BsPersonSquare />
-                Customers
+              <div className="helpbox">
+                <div>
+                  <BsPersonSquare className="personicon" />
+                </div>
+                <div className="customer-text">Customers</div>
               </div>
             </div>
             <div className="link">
@@ -131,26 +85,31 @@ function App() {
                     />
                   </svg>
                 </div>
-                Income
+                <div className="incometext">Income</div>
               </div>
             </div>
             <div className="link">
               <div className="percentage">
-                <TbPercentage />
-                Promote
+                <div>
+                  <TbPercentage />
+                </div>
+                <div className="promote">Promote</div>
               </div>
             </div>
             <div className="link">
               <div className="helpbox">
                 <MdOutlineLiveHelp className="help" />
-                <span className="helptext">Help</span>
+                <div className="helptext">Help</div>
               </div>
             </div>
           </div>
 
           <div className="evano">
             <div className="evanoimg">
-              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTOKgf1btqasr29ElrKVN80RPZxRDi4qTMnwQ&usqp=CAU" />
+              <img
+                alt="error"
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTOKgf1btqasr29ElrKVN80RPZxRDi4qTMnwQ&usqp=CAU"
+              />
             </div>
             <div className="evanoname">
               <div>Evano</div>
@@ -203,7 +162,7 @@ function App() {
               </div>
               <div className="card-detail">
                 <p className="heading">Earning</p>
-                <h3>$198k</h3>
+                <h3 className="cardprice">$198k</h3>
 
                 <p className="range">
                   <span className="green">
@@ -294,16 +253,57 @@ function App() {
 
           <div className="overview-customer">
             <div className="overview mx-2">
-              <Chart
-                width={"100%"}
-                height={"220px"}
-                chartType="ColumnChart"
-                data={data}
-                options={options}
-                className="chart"
-              />
+              <div className="overview-header">
+                <div>
+                  <h4>Overview</h4>
+                  <p className="grey">Monthly Earning</p>
+                </div>
+                <div classname="overview-select">
+                  <select className="custom-select-element">
+                    <option value="">Quarterly</option>
+                    <option value="option1">Last 60 days</option>
+                    <option value="option2">Last 90 days</option>
+                  </select>
+                </div>
+              </div>
+
+              <div className="overview-chart">
+                <div className="bar">
+                  <div className="Janbar"></div>
+                  <div className="Febbar"></div>
+                  <div className="Marbar"></div>
+                  <div className="Aprbar"></div>
+                  <div className="Maybar"></div>
+                  <div className="Junbar"></div>
+                  <div className="Julbar"></div>
+                  <div className="Augbar"></div>
+                  <div className="Sepbar"></div>
+                  <div className="Octbar"></div>
+                  <div className="Novbar"></div>
+                  <div className="Decbar"></div>
+                </div>
+
+                <div className="label">
+                  <div className="Jan">Jan</div>
+                  <div className="Feb">Feb</div>
+                  <div className="Mar">Mar</div>
+                  <div className="Apr">Apr</div>
+                  <div className="May">May</div>
+                  <div className="Jun">Jun</div>
+                  <div className="Jul">Jul</div>
+                  <div className="Aug">Aug</div>
+                  <div className="Sep">Sep</div>
+                  <div className="Oct">Oct</div>
+                  <div className="Nov">Nov</div>
+                  <div className="Dec">Dec</div>
+                </div>
+              </div>
             </div>
             <div className="customer">
+              <div className="customer-text">
+                <p>Customers</p>
+                <p>Customers that buys products</p>
+              </div>
               <DonutChart />
             </div>
           </div>
@@ -355,7 +355,7 @@ function App() {
                   <>
                     <div key={index} className="table_description">
                       <div className="product-left">
-                        <img src={item.img} />
+                        <img src={item.img} alt="error" />
                         <div className="headingpara">
                           <div className="prod_heading">{item.heading}</div>
                           <div className="heading">{item.para}</div>
