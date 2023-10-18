@@ -5,12 +5,12 @@ import { AiOutlineArrowUp } from "react-icons/ai";
 import DonutChart from "./DonutChart";
 import { Data } from "./Data";
 import { TbNotes } from "react-icons/tb";
-import { MdArrowDropDown, MdOutlineLiveHelp } from "react-icons/md";
-import { PiLock, PiCurrencyDollarBold } from "react-icons/pi";
+import { MdOutlineLiveHelp } from "react-icons/md";
+import { PiLock, PiCurrencyDollarBold, PiCaretRightBold } from "react-icons/pi";
 import { BsPersonSquare } from "react-icons/bs";
 import { HiOutlineKey } from "react-icons/hi";
-import { TbPercentage } from "react-icons/tb";
-import { PiCube } from "react-icons/pi";
+import { AiOutlineSetting } from "react-icons/ai";
+import { PiCube, PiCaretDownBold } from "react-icons/pi";
 
 function App() {
   return (
@@ -53,7 +53,10 @@ function App() {
                 <div className="square">
                   <PiCube />
                 </div>
-                Product
+                <div className="productlink">Product</div>
+                <div className="caretright">
+                  <PiCaretRightBold />
+                </div>
               </div>
             </div>
             <div className="link">
@@ -62,6 +65,9 @@ function App() {
                   <BsPersonSquare className="personicon" />
                 </div>
                 <div className="customer-text">Customers</div>
+                <div className="caretright">
+                  <PiCaretRightBold />
+                </div>
               </div>
             </div>
             <div className="link">
@@ -75,8 +81,8 @@ function App() {
                 >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
-                    width="24"
-                    height="24"
+                    width="23"
+                    height="23"
                     viewBox="0 0 24 24"
                   >
                     <path
@@ -86,20 +92,32 @@ function App() {
                   </svg>
                 </div>
                 <div className="incometext">Income</div>
+                <div className="caretright">
+                  <PiCaretRightBold />
+                </div>
               </div>
             </div>
             <div className="link">
               <div className="percentage">
-                <div>
-                  <TbPercentage />
+                <div className="settings-with-percentage">
+                  {/* <div className="settings-icon-container"> */}
+                  <AiOutlineSetting className="ai-outline-setting-icon" />
+                  {/* <FaPercent className="percentage-icon" />
+                  </div> */}
                 </div>
                 <div className="promote">Promote</div>
+                <div className="caretright">
+                  <PiCaretRightBold />
+                </div>
               </div>
             </div>
             <div className="link">
               <div className="helpbox">
                 <MdOutlineLiveHelp className="help" />
                 <div className="helptext">Help</div>
+                <div className="caretright">
+                  <PiCaretRightBold />
+                </div>
               </div>
             </div>
           </div>
@@ -117,7 +135,7 @@ function App() {
             </div>
 
             <div className="dropdown mt-5">
-              <MdArrowDropDown />
+              <PiCaretDownBold className="caret" />
             </div>
           </div>
         </div>
@@ -137,7 +155,7 @@ function App() {
               <div className="input-group">
                 <div className="form-outline">
                   <div className="fa-input">
-                    <FontAwesomeIcon icon={faSearch} />
+                    <FontAwesomeIcon icon={faSearch} className="faSearch" />
                   </div>
                   <input
                     id="search-focus"
@@ -300,9 +318,9 @@ function App() {
               </div>
             </div>
             <div className="customer">
-              <div className="customer-text">
+              <div className="customertext">
                 <p>Customers</p>
-                <p>Customers that buys products</p>
+                <p className="grey">Customers that buys products</p>
               </div>
               <DonutChart />
             </div>
@@ -312,14 +330,17 @@ function App() {
             <div className="products">
               <div className="product-header">
                 <div>
-                  <h4>Product Shelf</h4>
+                  <h4 className="sell">Product Sell</h4>
                 </div>
               </div>
               <div className="search-select">
                 <div className="input-group">
                   <div className="form-outline">
                     <div className="fa-input">
-                      <FontAwesomeIcon icon={faSearch} />
+                      <FontAwesomeIcon
+                        icon={faSearch}
+                        className="selectsearch"
+                      />
                     </div>
                     <input
                       id="search-focus"
@@ -363,7 +384,7 @@ function App() {
                       </div>
 
                       <div className="product-right">
-                        <div>{item.stock}</div>
+                        <div className="stock">{item.stock}</div>
                         <div className="price">{item.price}</div>
                         <div className="sales">{item.sales}</div>
                       </div>

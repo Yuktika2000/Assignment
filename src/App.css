@@ -2,32 +2,35 @@
     margin: 0 !important;
     padding: 0 !important;
     box-sizing: border-box;
-    font-family: "Arial";
+    font-family: "Arial" !important;
 }
 
 .main {
     width: 100% !important;
     display: grid !important;
-    grid-template-columns: 1fr 3.5fr !important;
+    grid-template-columns: 1fr 3fr !important;
 }
 
 .sidebar {
     background: linear-gradient(to bottom, #091b35 0%, #121369 100%);
     color: white;
-    height:  125vh !important;
+    height:  129vh !important;
 }
 
 
 .sidebar-header{
     display: flex;
     flex-wrap: wrap;
-    margin:3% auto 0 0 !important;
+    margin:3% auto 0 3% !important;
 }
 
 .rounded-icon {
     display: inline-block;
     border-radius: 50%;
     overflow: hidden;
+    margin-left: -2px !important;
+    padding: 0 !important;
+    margin-top: 0 !important;
 }
 .icon{
     margin: 4% 0 auto 4.2% !important;
@@ -42,11 +45,10 @@
 }
 
 
-
 .dashboard{
     display: grid;
     margin: 2% 0 0 2.6% !important;
-    grid-template-columns: 3fr 1fr;
+    grid-template-columns: 3.5fr 1fr !important;
 }
 
 .input-group {
@@ -71,8 +73,9 @@
     transform: translateY(-50%);
 }
 .form-control::placeholder {
-    padding-left: 25px;
-    color: grey;
+    padding-left: 22px !important;
+    color: rgb(194, 193, 193) !important;
+    font-size: 13px!important;
 }
 
 .sharukh{
@@ -90,29 +93,33 @@ input{
 .sidebar-links{
     display: flex !important;
     flex-direction: column;
-    margin: 15px 20px 20px 20px !important;
+    margin: 10px 20px 20px 20px !important;
 }
 
 .link{
-    padding: 10px !important;
-    margin: 5px 2px 5px 2px !important;
+    padding: 10px 12px 10px 12px !important;
+    margin: 2px 2px 2px 2px !important;
     border-radius: 9px;
     font-size: 13px;
 }
 
 .first{
-    background-color:rgb(66, 72, 145) !important;
+    background-color:rgb(66, 74, 170) !important;
 }
 
 .svg{
     border-radius: 15px !important;
 }
 
+.cardprice{
+    margin: 4% 0 4% 0 !important;
+    font-size: 21px;
+}
 
 .card{
     background-color: white;
-    width:87% !important;
-    padding: 12% 4% 12% 5% !important;
+    width:88% !important;
+    padding: 11% 3% 12% 4% !important;
     border-radius: 8px;
     display: flex;
     flex-wrap: wrap;
@@ -121,6 +128,7 @@ input{
 
 .dashboard-section{
     background-color: rgb(223, 228, 230);
+    padding-left: 12px !important;
 }
 
 
@@ -140,8 +148,8 @@ input{
 }
 .range{
     font-size: 12px;
-    color:grey;
-    font-weight: 550 !important;
+    color:rgb(27, 27, 27);
+    font-weight: 600 !important;
     letter-spacing: 0.3px;
     margin: 3px 0 0 0 !important;
 }
@@ -157,24 +165,25 @@ input{
 }
 
 .green-circle{
-    background-color: rgb(196, 238, 196);
+    background-color: rgb(224, 255, 224) !important;
 }
 
 .pink-circle{
-    background-color:rgb(248, 190, 199);
+    background-color:rgb(250, 202, 231) !important;
 }
 
 .sky-circle{
-    background-color: rgb(201, 212, 216);
+    background-color: rgb(215, 234, 250) !important;
 }
 
 .purple-circle{
-  background-color: rgb(248, 203, 248);
+  background-color: rgb(232, 207, 252) !important;
 }
 
 .heading{
-    font-size: 12px;
-    color: grey;
+    font-size: 11px;
+    color: rgb(177, 175, 175) !important;
+    letter-spacing: 0.4px;
 }
 
         .vertical-bar-chart {
@@ -247,17 +256,6 @@ input {
     border: 1px solid grey;
 }
 
-
-
-
-.link {
-    padding: 10px !important;
-    margin: 5px 2px 5px 2px !important;
-    border-radius: 9px;
-    font-size: 13px;
-    cursor: pointer;
-}
-
 .first {
     background-color: rgb(3, 3, 161);
 }
@@ -267,23 +265,13 @@ input {
     background-color: rgb(47, 47, 201) !important;
 }
 
-.card {
-    background-color: white;
-    width: 90%;
-    border-radius: 8px;
-    display: flex;
-    flex-wrap: wrap;
-    align-content: center;
-    flex-direction: row;
-    height: 130px;
-}
 
 .dashboard-section {
     background-color: rgb(223, 228, 230);
 }
 
 .card-section {
-    margin: 2.9% 3% 3.4% 3.1% !important;
+    margin: 2.6% 1.9% 3% 3.3% !important;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
 }
@@ -351,10 +339,14 @@ input {
 }
 
 
+.overview-chart{
+    margin: 4px auto auto 6px !important;
+    width: 99%;
+}
 
 .overview{
     padding:1% 1% 1% 2% !important;
-    width:65%;
+    width:68%;
     background-color: white;
     border-radius: 10px;
 
@@ -363,14 +355,15 @@ input {
         width:84% !important;
         letter-spacing: 0.3px;
         font-weight: 550;
+        background-color:rgb(245, 245, 245) !important;
     }
 }
 
 .customer{
-    height: 260px !important;
+    height: 276px !important;
     background-color: white;
     border-radius: 14px;
-    width:28%;
+    width:26.5%;
     margin-left: 2.6% !important;
 }
 
@@ -383,7 +376,7 @@ input {
     position: relative;
     display: flex;
     padding: 10px;
-    margin: 10px 0 0 55px !important;
+    margin: 20px 0 0 55px !important;
     transform: rotate(-1deg);
     background-color: white;
     box-shadow: 2px 2px 10px 2px rgb(224, 226, 226);
@@ -427,41 +420,47 @@ input {
 }
 
 .custom-select-element {
-    padding: 6px !important;
+    padding: 6.5px !important;
     font-family: Arial, sans-serif;
-    border: 1px solid lightgray;
-    border-radius: 5px;
-    color:grey;
+        border-radius: 7px;
+        border: none !important;
+    color:rgb(163, 162, 162);
     margin: 0 0 0 10px !important;
-    border:none;
-    font-size: 11px;
-    font-weight: 500;
-    background-color:rgb(236, 237, 238);
+    font-size: 11.5px;
+    letter-spacing: 0.3px;
+    font-weight: 550;
+    background-color:rgb(245, 245, 245);
     outline: none;
     width: 87% !important;
 }
 
 .custom-select-element option {
     color:grey;
-   
-    background-color:#dceaf1;
+    background-color:rgb(239, 241, 243);
 }
 
 .custom-select-element:hover {
     border-color: gray;
 }
+.productlink{
+    margin-left: 1px !important;
+    width: 69% !important;
+}
 
 .products-section{
-    width: 90%;
-    border-radius: 10px;
+    width: 91.7%;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+        padding-bottom: 10px !important;
         background-color: white;
-        margin: 2% 3% 2% 3.6% !important;
+        margin: 3% 3% 0 3.6% !important;
 }
 .products{
     display: grid !important;
     padding: 2% !important;
     border-radius: 10px;
     grid-template-columns: 2.8fr 1fr !important;
+
 }
 
 .search-select{
@@ -473,11 +472,21 @@ input {
 }
 
 .search-select .form-control{
-    background-color: rgb(236, 237, 238);
+    background-color: rgb(245, 245, 245);
     border: none;
     outline: none;
+    padding: 5.5px !important;
     width: 100% !important;
 }
+
+.search-select .input-group
+    ::placeholder {
+        font-size: 11.5px !important;
+        font-weight: 550;
+        letter-spacing: 0.3px;
+        color:rgb(189, 187, 187);
+    }
+
 
 .table_header{
     display: grid;
@@ -485,11 +494,14 @@ input {
     color: grey;
     font-size: 12px;
     text-align: justify;
+    padding-bottom: 12px !important;
+        padding: 0 10px;
+    border-bottom: 1px solid rgb(212, 210, 210) !important;
 }
 
 .name{
-    margin: 0 0 0 20px !important;
-            letter-spacing: 0.7px;
+    margin: 0 0 0 24px !important;
+            letter-spacing: 0.9px;
 }
 .stock_price_sales{
    display: grid;
@@ -499,14 +511,22 @@ input {
 }
 
 
+.stock{
+    font-weight: 500;
+    font-size: 14px;
+    color: rgb(90, 90, 90);
+}
+
+
 .table_description{
     display: grid;
     grid-template-columns: 2.6fr 1fr;
     margin: 2% auto auto 2% !important;
 
     & img{
-        width:85px;
-        height: 50px;
+        width:65px;
+        height: 45px;
+        border-radius: 10px;
         margin-right: 10px !important;
     }
 }
@@ -526,53 +546,60 @@ display: grid;
 }
 
 .headingpara{
-    margin: 2% 0 0 0 !important;
+    margin: 1% 0 0 0 !important;
 
     & .heading{
-        margin-top: 7px !important;
+        margin-top: 2px !important;
         letter-spacing: 0.7px;
     }
 }
 
 .prod_heading, .price{
-    font-size: 18px !important;
-    font-weight: 550;
+    font-size: 16px !important;
+    font-weight: 600;
 }
 
 .sales{
     margin-left: 12px !important;
+    font-size: 13px !important;
 }
 
 
 .evanoimg img{
-    width: 46px;
-    height: 46px;
+    width: 40px;
+    height: 40px;
     border-radius: 50%;
+    margin: 4px auto auto 5px !important;
 }
 
 .evano{
     display: flex;
     flex-wrap: wrap;
-    margin: 70% 5% auto 4% !important;
-    padding: 2% !important;
+    margin: 154% 5% auto 4% !important;
+    padding: 0% !important;
     border-radius: 6px;
-    background-color: rgb(69, 73, 128);
+    background-color: rgb(63, 69, 153);
 }
 
 .dropdown{
     color:rgb(179, 176, 176) ;
-    margin: 3% 0 0 0 !important;
+    margin: 5% 0 0 5% !important;
+}
+
+.caret{
+    margin-left: 13px !important;
+    font-weight: 550 !important;
 }
 
 .evanoname{
-    margin: 3% 5% 3% 5% !important;
+    margin: 3.8% 5% 3% 5% !important;
     & div:nth-of-type(1){
-     font-size: 15px;
+     font-size: 14px;
      font-weight: 550;
     }
 
     & div:nth-of-type(2){
-     font-size: 12px;
+     font-size: 11.8px;
      color: rgb(179, 176, 176);
      margin: 5% 0 0 0 !important;
      letter-spacing: 0.6px;
@@ -582,18 +609,20 @@ display: grid;
 .income{
     display: flex;
     flex-wrap: wrap;
-    padding: 0;
-    margin: -5px -3px 0 -3px !important;
+    padding: 0 !important;
+    margin: 0 auto 0 auto !important;
 }
 
 .bluewallet{
-    margin: 14px !important;
+    margin: 16px 14px 14px 18px !important;
     align-items: center !important;
     text-align: center !important;
 }
 
 .note{
-    color:rgb(169, 3, 219)
+    color:rgb(156, 12, 240);
+    margin-left: -2px !important;
+    font-weight: 500 !important;
 }
 
 .lock{
@@ -602,8 +631,8 @@ display: grid;
 }
 
 .note ,.lock{
-    width: 40px;
-    height: 40px;
+    width: 45px;
+    height: 45px;
 }
 
 .dollar{
@@ -621,6 +650,7 @@ display: grid;
         border-radius: 50%;
         border-right: 1px solid transparent ;
         transform: rotate(-40deg) !important;
+        font-weight: 800 !important;
 }
 
 
@@ -634,7 +664,7 @@ display: grid;
 }
 
 .square{
-    border: 1px solid white;
+    border: 2px solid white;
     width:19px;
     height:19px;
     border-radius: 3px;
@@ -652,12 +682,14 @@ display: grid;
     width:25px;
     height:25px;
     margin-right: 2px !important;
+    margin-left: -2px !important;
 }
 
 
 .helptext{
      padding: 0 !important;
     margin: 5px 0 0 5px !important;
+            width: 68% !important;
 }
 
 .helpbox{
@@ -667,6 +699,7 @@ display: grid;
 
 .customer-text{
     margin-left: 11px !important;
+        width: 62.5% !important;
 }
 
 .personicon{
@@ -675,16 +708,19 @@ display: grid;
 }
 
 .promote{
-   margin-left: 11px !important;
+   margin:3px 0 0 11px !important;
+        width: 68% !important;
 }
 
 .incometext{
     margin: 5px 0 0 10px!important;
+        width:68% !important;
 }
 
 .percentage{
     display: flex;
     flex-wrap: wrap;
+    margin:auto !important;
 }
 
 .overview-header{
@@ -694,9 +730,9 @@ display: grid;
 
 
 .grey{
-    color:grey;
-    font-size: 13px;
-    letter-spacing: 0.7px;
+    color:rgb(177, 175, 175) !important;
+    font-size: 11.7px !important;
+    letter-spacing: 0.7px !important;
     margin: 5px 0 0 0 !important;
 }
 
@@ -712,14 +748,15 @@ display: grid;
     font-size: 12px;
     color: rgb(107, 107, 107);
     font-weight: 550;
-    margin: 10px 0 0 7px !important;
+    margin: 17px 0 0 7px !important;
    
 }
 
 .Janbar,.Febbar, .Marbar,.Aprbar,.Maybar, .Junbar, .Julbar,.Sepbar, .Octbar, .Novbar, .Decbar{
     width:39px !important;
     height: 100px;
-    background-color: rgb(236, 237, 238) ;
+    background-color:rgba(240, 235, 255, 0.808);
+    box-shadow: 2px 2px 10px 1px white;
         border-radius: 8px;
         padding: 0 !important;
         margin: 0 !important;
@@ -727,39 +764,42 @@ display: grid;
 
 .Augbar{
     background-color: rgba(70, 19, 253, 0.808);
-    height: 165px !important;
+    height: 172px !important;
     width:39px !important;
         border-radius: 8px;
 }
 
-.Janbar{height:90px}
-.Febbar{height:70px}
-.Marbar{height: 140px}
-.Aprbar{height: 100px}
-.Maybar{height: 124px}
-.Junbar{height: 60px}
-.Julbar{height:128px}
-.Sepbar{height: 140px}
-.Octbar{height: 105px}
-.Novbar{height: 62px}
-.Decbar{height: 122px}
+.Janbar{height:110px}
+.Febbar{height:90px}
+.Marbar{height: 158px}
+.Aprbar{height: 116px}
+.Maybar{height: 133px}
+.Junbar{height:70px}
+.Julbar{height:142px}
+.Sepbar{height: 158px}
+.Octbar{height: 115px}
+.Novbar{height: 82px}
+.Decbar{height: 132px}
 
 
 .donut-chart-container{
 
 }
-
-.customer-text{
-    margin: 8px 0 0 12px !important;
+.customer-text {
+        margin: 1px 10px 0 12px !important;
+}
+.customertext{
+    margin: 15px 0 0 16px !important;
     & p:nth-of-type(1){
-        font-weight: 550;
+        font-weight: 750;
+        font-size: 15px;
     }
 
     & p:nth-of-type(2){
-        font-size: 11.2px;
+        font-size: 11.7px;
         color: grey;
-        margin: 3px 0 0 0 !important;
-        letter-spacing: 0.5px;
+        margin: 5px 0 5px 0 !important;
+        letter-spacing: 0.7px;
     }
 }
 
@@ -768,4 +808,42 @@ display: grid;
         color: grey;
         margin: 3px 0 0 0;
             letter-spacing: 0.5px;
+}
+
+.ai-outline-setting-icon {
+    background-color: transparent;
+    font-size: 22px !important;
+}
+
+
+
+.ai-outline-setting-icon {
+   margin-left: -2px !important;
+}
+.settings-with-percentage {
+    display: flex;
+    align-items: center;
+}
+
+.percentage-icon {
+    font-size: 12px;
+    margin-left: 4px;
+}
+
+.caretright{
+    color: rgb(158, 158, 158);
+    font-weight: 800 !important;
+    margin-left: 5px !important;
+}
+
+
+.sell{
+    margin-left: 5px !important;
+}
+.faSearch{
+    font-size: 14px !important;
+}
+
+.selectsearch{
+    font-size: 12px !important;
 }
